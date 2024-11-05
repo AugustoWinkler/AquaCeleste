@@ -28,6 +28,9 @@ header{
 nav{
     display: none;
 }
+#itens-desk{
+    display: none;
+}
 nav ul {
     list-style-type: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -237,7 +240,7 @@ footer{
     text-align: center;
     font-weight: bolder;
     border: 2px solid #20a6ff;
-    box-shadow: 0px 0px 10px 1px black;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.527);
 }
 .points h1{
     color: #20a6ff;
@@ -249,6 +252,7 @@ footer{
 .produto{
     display: flex;
     margin: auto;
+    margin-top: 20px;
     width: 80vw;
     background-color: white;
     padding: 20px;
@@ -274,4 +278,101 @@ footer{
     padding-top: 20px;
     font-size: 0.8em;
     text-align: center;
+}
+
+
+@media screen and (min-width: 1024px) {
+    /* Ajustes específicos para telas de computador */
+    .content{
+        width: 80vw;
+        margin: auto;
+        
+    }
+    .produtos{
+        margin: auto;
+        display: flex;
+        gap: 20px;
+        
+    }
+    .esquerdo{
+        margin: 0;
+    }
+    .direito{
+        margin: 0;
+    }
+    .backimg{
+        margin-top: 50px;
+        background-image: url('img/FundoAgua.jpg'); 
+        background-size: cover; 
+        background-attachment: fixed;
+        margin: auto;
+        height: 220px;
+        width: 80vw;
+        
+    }
+    .info{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .slider{
+        height: 300px;
+    }
+
+    .manual-navigation{
+        margin-top: -120px;
+       
+    }
+    .navigation-auto{ 
+        margin-top: 280px;  
+    }
+    span#burguer{
+        display: none;
+    }
+    #itens-desk{
+        background-color: #20a6ff;
+        display: flex;
+        border-bottom: px solid rgb(0, 132, 255);
+        box-shadow: 0px 5px 20px 1px  rgb(0, 0, 0);
+        margin-bottom: 10px;
+        user-select: none;
+        cursor: pointer;
+        
+    }
+    #itens-desk ul{
+        display: flex;
+        text-align: center;
+        margin: auto;
+    }
+    #itens-desk ul li{
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 100px;
+    }
+    #itens-desk ul li:hover{
+        border: 1px solid #0369ad;
+        background-color: white;
+        border-radius: 5px;
+        width: 100px;
+        transition: 1s;
+    }
+    #itens-desk ul li a:hover{
+        color: #20a6ff;
+        transition: 1s;
+    }
+
+    header{
+        z-index: 1;
+        width: 100vw;
+        display: flex;
+        background-image: linear-gradient(to Top, rgb(255, 255, 255), rgb(255, 255, 255));
+        justify-content: center;
+        border-bottom: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        
+        
+    }
+
 }
