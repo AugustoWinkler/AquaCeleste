@@ -65,32 +65,6 @@ span#burguer:hover{
     background-color:  rgb(57, 159, 255);
 }
 
-/*Video CSS*/
-#video{
-    border-radius: 5px;
-    width: 70vw;
-    height: auto;
-    margin: auto;
-    padding-bottom: 40px;
-}
-.content-about{
-    width: 70vw;
-    margin: auto;
-    text-align: center;
-    background-color: white;
-    border-radius: 20px;
-    margin-top: 20px;
-    padding: 40px;
-}
-
-.content-about img{
-    width: 60vw;
-    height: auto;
-}
-.content-about p{
-    text-align: start;
-}
-
 /*Footer CSS*/
 footer{
     margin-top: 100px;
@@ -101,24 +75,38 @@ footer{
     color: white;
     font-size: 0.8em;
 }
-
-
+.content-service{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    width: 80vw;
+    padding: 20px;
+    border-radius: 20px;
+}
+.imagem-garrafa img{
+    border-radius: 50%;
+    width: 140px;
+    height: auto;
+}
+.esquerdo{
+    width: 100%;
+    margin-right: 20px;
+}
+.esquerdo h1{
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.direito p{
+    padding-top: 20px;
+    font-size: 0.8em;
+    text-align: center;
+}
 
 @media screen and (min-width: 1024px) {
     
-    .content-about{
-        width: 70vw;
-        margin: auto;
-        text-align: center;
-        background-color: white;
-        border-radius: 20px;
-        margin-top: 20px;
-        padding: 40px;
-    }
-    .content-about p{
-        text-align: start;
-    }
-
     span#burguer{
         display: none;
     }
@@ -166,8 +154,5 @@ footer{
         
         
     }
-    #video{
-        width: 50vw;
-        height: 50vh;
-    }
+
 }
